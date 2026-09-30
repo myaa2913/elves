@@ -16,7 +16,7 @@
 - **Local.** A sqlite file and a folder of markdown on your laptop. launchd or cron runs `/scan` hourly, `/ingest` nightly, and `/lint` weekly. It is always on while the laptop is awake, which turns out to be enough.
 - **A database you own.** Every task, its status, and every piece of feedback you give is a row you can query, back up, or delete.
 - **Controllable.** It reads only the sources named in one `config.yaml`. Nothing is sent, shared, or changed outside the folder; every write tool a connector exposes is denied in the harness, not just discouraged in the prompt.
-- **Any coding agent, including the one you already have at work.** You may not be able to use Muse, Grok Bot, or dots on a work machine, and you do not need to. The whole design is one markdown file, about 200 lines. Hand it to Claude Code, Codex, Cursor, or whatever your company already allows with MCP connectors, and it builds it.
+- **Any coding agent, including the one you already have at work.** You may not be able to use Muse, Grok Bot, or dots on a work machine, and you do not need to.
 - **A second brain you can read.** Everything the agent learns lands in a markdown wiki: a page per person, project, and output type, plus your style rules, an index, and a log. Every rule cites the feedback it came from. Open the folder in Obsidian and you can see all of it, and change any of it.
 
 ## The tale
