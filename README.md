@@ -8,13 +8,14 @@
 
 ## Why share it now
 
-[Muse](https://about.fb.com/news/2026/09/introducing-muse-personal-ai-agent/), [Grok Bot](https://x.ai/bot), and now [dots](https://openai.com/index/introducing-dots/) all sell the same shape of thing: an always-on agent that works while you're away, brings you finished work, and learns from your feedback. That shape is right.
+[Muse](https://about.fb.com/news/2026/09/introducing-muse-personal-ai-agent/), [Grok Bot](https://x.ai/bot), and [dots](https://openai.com/index/introducing-dots/) all shipped this month selling the same loop: an always-on agent that watches your work, drafts while you're away, brings you finished work, and learns from your feedback. All three run on a cloud computer with broad access to your accounts, on a paid plan.
 
-This repo is not a competitor to any of them. It is a small loop I have been running on my own laptop since before they launched, and the reason to share it is that it is quick to set up and you can run it today with whatever coding agent you already use, including on a work machine where the consumer agents are not an option.
+**elves** is that loop, free, local, and controllable, at a scale one person can run and read. I have been running it on my own laptop since before they launched. It covers the part of the day that actually eats knowledge workers, the inbox and the calendar, and leaves out the parts I don't want running unattended: it doesn't drive a browser, sign into websites, or make calls.
 
-- **Scheduled jobs, not a cloud computer.** launchd or cron runs `/scan` hourly, `/ingest` nightly, and `/lint` weekly. It is always on while the laptop is awake, which turns out to be enough.
-- **A database you own.** A sqlite file holds every task, its status, and every piece of feedback you give. Query it, back it up, delete it.
-- **Full control.** It reads only the sources named in one `config.yaml`. Nothing is sent, shared, or changed outside the folder; every write tool a connector exposes is denied in the harness, not just discouraged in the prompt.
+- **Free.** One MIT-licensed idea file, about 200 lines. No subscription, no cloud computer. Hand it to Claude Code, Codex, Cursor, or whatever coding agent your company already allows, and it builds it. Then customize it however you like.
+- **Local.** A sqlite file and a folder of markdown on your laptop. launchd or cron runs `/scan` hourly, `/ingest` nightly, and `/lint` weekly. It is always on while the laptop is awake, which turns out to be enough.
+- **A database you own.** Every task, its status, and every piece of feedback you give is a row you can query, back up, or delete.
+- **Controllable.** It reads only the sources named in one `config.yaml`. Nothing is sent, shared, or changed outside the folder; every write tool a connector exposes is denied in the harness, not just discouraged in the prompt.
 - **Any coding agent, including the one you already have at work.** You may not be able to use Muse, Grok Bot, or dots on a work machine, and you do not need to. The whole design is one markdown file, about 200 lines. Hand it to Claude Code, Codex, Cursor, or whatever your company already allows with MCP connectors, and it builds it.
 - **A second brain you can read.** Everything the agent learns lands in a markdown wiki: a page per person, project, and output type, plus your style rules, an index, and a log. Every rule cites the feedback it came from. Open the folder in Obsidian and you can see all of it, and change any of it.
 
