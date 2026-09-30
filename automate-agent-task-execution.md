@@ -155,7 +155,7 @@ The step that makes the system improve. Modeled on Karpathy's LLM wiki: the wiki
   - A comment about a project's context, history, or constraints → `projects/<project>.md`
   - A comment about how a type of output should be structured → `playbooks/<type>.md`
   - A comment about what should be surfaced at all ("never prep games night", "that sender is always noise") → the source's scope in `config.yaml`: a skip list, an excluded sender. Scope edits from feedback only narrow; they never grant new access. Log them like any other rule.
-- **Distill, don't append.** Feedback becomes a rule, not a quote. "This is too long, Hamin just wants the number" becomes, on `people/hamin.md`: *Prefers the headline number first; skip methodology unless asked.* Each rule cites the raw file it came from (`[feedback/2026-09-25.md]`) so it can be traced and, if later contradicted, revised rather than duplicated.
+- **Distill, don't append.** Feedback becomes a rule, not a quote. "This is too long, Sam just wants the number" becomes, on `people/sam.md`: *Prefers the headline number first; skip methodology unless asked.* Each rule cites the raw file it came from (`[feedback/2026-09-25.md]`) so it can be traced and, if later contradicted, revised rather than duplicated.
 - If a new rule contradicts an existing one, the newer wins and the old one is rewritten, not left alongside.
 - Create new pages when a requester, project, or output type appears for the first time. Every page gets a line in `index.md`.
 - Link pages with `[[wiki-links]]` where they relate (a person to their projects, a project to its playbooks).
