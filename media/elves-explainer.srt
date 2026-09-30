@@ -19,33 +19,33 @@ I call it elves.
 You know the story. The shoemaker goes to bed. In the morning, the shoes are finished. All he does is look them over.
 
 6
-00:00:29,220 --> 00:00:40,784
-Imagine coming back from lunch, and every important ask that came in while you were out has already been drafted and is waiting for your review. No more triaging messages. No more kicking off agents and babysitting them.
+00:00:29,220 --> 00:00:46,031
+Imagine coming back from lunch, or a meeting, or a couple of hours of deep work, and every important ask that came in while you were away has already been drafted and is waiting for your review. No more triaging messages. No more kicking off agents and babysitting them.
 
 7
-00:00:41,784 --> 00:00:46,939
+00:00:47,031 --> 00:00:52,186
 That's the whole idea. Every hour, it checks the inboxes and calendars I've told it about.
 
 8
-00:00:47,939 --> 00:00:52,026
+00:00:53,186 --> 00:00:57,273
 Anything that needs real work gets drafted right away. Nothing is sent.
 
 9
-00:00:53,026 --> 00:01:00,085
+00:00:58,273 --> 00:01:05,332
 After lunch, I open the review. Every item starts with what it did. I approve, edit, or toss it. That's my entire job.
 
 10
-00:01:01,085 --> 00:01:16,967
+00:01:06,332 --> 00:01:22,214
 My reactions become rules. "Too long, Sam just wants the number" becomes a note on Sam's page, and the next draft is shorter. Over time, that adds up to a second brain: everything it learns about my work, written down in plain files I can read.
 
 11
-00:01:17,967 --> 00:01:27,998
+00:01:23,214 --> 00:01:33,245
 What I like about it: it runs on my laptop, not in someone's cloud. It only reads what I've named. It never sends anything without me. And everything it learns is written down where I can read it.
 
 12
-00:01:28,998 --> 00:01:38,611
+00:01:34,245 --> 00:01:43,858
 The whole product is one idea file. Hand it to whatever coding agent you already have, even the one you're allowed to use at work. It builds it, and you can customize it however you like.
 
 13
-00:01:39,611 --> 00:01:41,376
+00:01:44,858 --> 00:01:46,623
 It's on GitHub. Link in the post.
