@@ -19,29 +19,33 @@ I call it elves.
 You know the story. The shoemaker goes to bed. In the morning, the shoes are finished. All he does is look them over.
 
 6
-00:00:29,220 --> 00:00:34,375
-That's the whole idea. Every hour, it checks the inboxes and calendars I've told it about.
+00:00:29,220 --> 00:00:40,784
+Imagine coming back from lunch, and every important ask that came in while you were out has already been drafted and is waiting for your review. No more triaging messages. No more kicking off agents and babysitting them.
 
 7
-00:00:35,375 --> 00:00:39,462
-Anything that needs real work gets drafted right away. Nothing is sent.
+00:00:41,784 --> 00:00:46,939
+That's the whole idea. Every hour, it checks the inboxes and calendars I've told it about.
 
 8
-00:00:40,462 --> 00:00:47,521
-After lunch, I open the review. Every item starts with what it did. I approve, edit, or toss it. That's my entire job.
+00:00:47,939 --> 00:00:52,026
+Anything that needs real work gets drafted right away. Nothing is sent.
 
 9
-00:00:48,521 --> 00:00:55,162
-My reactions become rules. "Too long, Sam just wants the number" becomes a note on Sam's page, and the next draft is shorter.
+00:00:53,026 --> 00:01:00,085
+After lunch, I open the review. Every item starts with what it did. I approve, edit, or toss it. That's my entire job.
 
 10
-00:00:56,162 --> 00:01:06,193
-What I like about it: it runs on my laptop, not in someone's cloud. It only reads what I've named. It never sends anything without me. And everything it learns is written down where I can read it.
+00:01:01,085 --> 00:01:07,726
+My reactions become rules. "Too long, Sam just wants the number" becomes a note on Sam's page, and the next draft is shorter.
 
 11
-00:01:07,193 --> 00:01:16,435
-It works with whatever coding agent you already have, even the one you're allowed to use at work. The whole design is one short document. Hand it over, and it builds it.
+00:01:08,726 --> 00:01:18,757
+What I like about it: it runs on my laptop, not in someone's cloud. It only reads what I've named. It never sends anything without me. And everything it learns is written down where I can read it.
 
 12
-00:01:17,435 --> 00:01:19,200
+00:01:19,757 --> 00:01:28,999
+It works with whatever coding agent you already have, even the one you're allowed to use at work. The whole design is one short document. Hand it over, and it builds it.
+
+13
+00:01:29,999 --> 00:01:31,764
 It's on GitHub. Link in the post.

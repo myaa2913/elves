@@ -22,6 +22,8 @@ This repo is not a competitor to any of them. It is a small loop I have been run
 
 The shoemaker goes to bed. In the morning, the shoes are finished. All he does is look them over.
 
+Imagine coming back from lunch to find every important ask that came in while you were out already drafted and waiting for your review. No triaging messages, no kicking off agents and babysitting them.
+
 That is the whole design. The agent fields requests, decides what deserves a draft, produces the draft without being told to start, and learns from your review so the next one is better. The executive's only job is `/review`.
 
 ## How it works
