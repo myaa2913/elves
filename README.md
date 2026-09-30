@@ -1,22 +1,22 @@
 # elves
 
-**An always-on agent for knowledge work that drafts before you ask. Runs on your laptop. Your only job is review.**
+**A small loop for knowledge work: an agent that drafts before you ask, running on your laptop with scheduled jobs, a database you own, and a second-brain wiki you can read. Your only job is review.**
 
 [![Two-minute explainer](media/poster.png)](media/elves-explainer.mp4)
 
 *Two-minute explainer: [narrated](media/elves-explainer.mp4) · [silent, captions on screen](media/elves-explainer-silent.mp4) · [script](media/script.md)*
 
-## The week of the always-on agent
+## Why share it now
 
-Meta shipped [Muse](https://about.fb.com/news/2026/09/introducing-muse-personal-ai-agent/) earlier this month: a personal agent on a dedicated cloud VM that keeps working after you close the app and comes back when it needs your approval. OpenAI answered on September 29 with [dots](https://openai.com/index/introducing-dots/): always-on agents inside ChatGPT, each with its own cloud computer, working toward your goals around the clock, learning from your feedback, and connecting to thousands of apps. OpenAI's own description of the goal is work done the way you would do it, "sometimes before you even think to ask."
+[Muse](https://about.fb.com/news/2026/09/introducing-muse-personal-ai-agent/), [Grok Bot](https://x.ai/bot), and now [dots](https://openai.com/index/introducing-dots/) all sell the same shape of thing: an always-on agent that works while you're away, brings you finished work, and learns from your feedback. That shape is right.
 
-That is the right goal. Both products also share three design choices: the agent runs on a computer in someone else's cloud, it is connected to as many of your apps as you will allow, and it decides case by case when to act on its own and when to ask.
+This repo is not a competitor to any of them. It is a small loop I have been running on my own laptop since before they launched, and the reason to share it is that it is quick to set up and you can run it today with whatever coding agent you already use, including on a work machine where the consumer agents are not an option.
 
-**elves** is the same promise, scoped to the part of the day that actually disappears for knowledge workers: the inbox and the calendar. It was built on a laptop with a coding agent from the single markdown file in this repo, and it makes three different bets.
-
-1. **Local.** Everything runs on your machine with the coding agent you already use. No cloud computer, no new account, no data leaving the laptop.
-2. **Scoped.** It reads only the sources named in one `config.yaml`. Anything not named is never read. A wiki page can narrow that scope; nothing can widen it.
-3. **Nothing ships.** There is no "act on its own" mode to configure. It drafts; you send. Every write tool a connector exposes (send, reply, forward, create event, delete) is denied in the harness, not just discouraged in the prompt.
+- **Scheduled jobs, not a cloud computer.** launchd or cron runs `/scan` hourly, `/ingest` nightly, and `/lint` weekly. It is always on while the laptop is awake, which turns out to be enough.
+- **A database you own.** A sqlite file holds every task, its status, and every piece of feedback you give. Query it, back it up, delete it.
+- **Full control.** It reads only the sources named in one `config.yaml`. Nothing is sent, shared, or changed outside the folder; every write tool a connector exposes is denied in the harness, not just discouraged in the prompt.
+- **Any coding agent, including the one you already have at work.** You may not be able to use Muse, Grok Bot, or dots on a work machine, and you do not need to. The whole design is one markdown file, about 200 lines. Hand it to Claude Code, Codex, Cursor, or whatever your company already allows with MCP connectors, and it builds it.
+- **A second brain you can read.** Everything the agent learns lands in a markdown wiki: a page per person, project, and output type, plus your style rules, an index, and a log. Every rule cites the feedback it came from. Open the folder in Obsidian and you can see all of it, and change any of it.
 
 ## The tale
 
@@ -34,12 +34,32 @@ flowchart LR
   I -. every draft reads the wiki first .-> D
 ```
 
-- **`/scan`** runs hourly. It pulls new messages and upcoming events from the inbound sources in `config.yaml`, decides what needs action, and triages each thread: `draft`, `quick_reply`, `delegate`, `clarify`, or `ignore`. Ignored threads never become tasks. A meeting with other attendees is a request for prep; your own solo reminders become to-dos.
+- **`/scan`** runs hourly from a scheduled job. It pulls new messages and upcoming events from the inbound sources in `config.yaml`, decides what needs action, and triages each thread: `draft`, `quick_reply`, `delegate`, `clarify`, or `ignore`. Ignored threads never become tasks. A meeting with other attendees is a request for prep; your own solo reminders become to-dos.
 - **`/draft`** runs the moment a scan finds work. Each task gets a subagent that reads the wiki (style, the requester's page, the project's page, the playbook for that output type, and prior feedback) before writing anything, and writes its output to `tasks/<id>/`. No permission prompt. Nothing is sent.
-- **`/review`** is the after-lunch view. Every item opens with the same line: *Action taken: read X, drafted Y at `tasks/<id>/…`, nothing sent.* You approve, edit, redraft, or discard. Each reaction is logged as feedback.
-- **`/ingest`** turns feedback into rules. *"Too long, Hamin just wants the number"* becomes one line on `wiki/people/hamin.md`: *Prefers the headline number first; skip methodology unless asked.* Every rule cites the raw transcript it came from, and a newer rule rewrites an older one instead of piling up beside it. The wiki is plain markdown you can read and edit.
+- **`/review`** is the after-lunch view. Every item opens with the same line: *Action taken: read X, drafted Y at `tasks/<id>/…`, nothing sent.* You approve, edit, redraft, or discard. Each reaction is logged as a feedback row.
+- **`/ingest`** turns feedback into rules. *"Too long, Hamin just wants the number"* becomes one line on `wiki/people/hamin.md`: *Prefers the headline number first; skip methodology unless asked.* Every rule cites the raw transcript it came from, and a newer rule rewrites an older one instead of piling up beside it.
 - **`/lint`** runs weekly and flags stale pages, contradictions, and playbooks whose drafts keep getting low ratings.
 - **`/todo`** is your own list: approved items you said you'd handle, drafts waiting for review, and what the agent is working on right now.
+
+State lives in three places you can open directly: `tasks.db` (sqlite: tasks, feedback, runs, and the scan's dedupe memory), `tasks/<id>/` (the drafts), and `wiki/` (the rules). There is nothing else.
+
+## The wiki is a second brain
+
+The products above all say the agent "learns your preferences." Here you can read what it learned. The wiki is plain markdown with `[[wiki-links]]`, so it opens as an Obsidian vault, and it is organized the way a second brain is: by the people you work with, the projects you are on, and the kinds of things you produce.
+
+```
+wiki/
+  index.md              every page, one line each
+  log.md                one line per scan, draft, ingest, and lint
+  style.md              your voice: tone, length, sign-off
+  people/<name>.md      what each requester wants, distilled from your feedback
+  projects/<name>.md    context, history, constraints, and which sources apply
+  playbooks/<type>.md   how to produce a reply, a status update, a meeting prep
+  lint/<date>.md        weekly findings
+  raw/                  feedback transcripts, append-only, never edited
+```
+
+Three rules keep it honest. Feedback is distilled into a rule, never pasted in as a quote. Every rule cites the raw transcript it came from, so you can trace it. A newer rule rewrites an older one instead of accumulating beside it, so a page reads as what is true now. `/lint` flags the pages that have gone stale, contradict each other, or keep producing drafts you rate low. The result is a knowledge base that grows one review at a time and that you can open, search, and correct by hand whenever you like.
 
 ## Run it
 
@@ -73,7 +93,7 @@ The running instance lives in a separate private folder, because `tasks/`, `task
 
 ## Credits
 
-The `/ingest` step is modeled on Andrej Karpathy's LLM wiki idea: the wiki is compiled knowledge, the agent is the compiler, and raw inputs are never edited. Built with Claude Code. A personal project by [Matthew Corritore](https://github.com/myaa2913), running on his laptop since September 2026.
+The `/ingest` step is modeled on Andrej Karpathy's LLM wiki idea: the wiki is compiled knowledge, the agent is the compiler, and raw inputs are never edited. Built with Claude Code. A personal project by [Matthew Corritore](https://github.com/myaa2913).
 
 ## License
 
