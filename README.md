@@ -2,9 +2,9 @@
 
 **A small loop for knowledge work: an agent that drafts before you ask, running on your laptop with scheduled jobs, a database you own, and a second-brain wiki you can read. Your only job is review.**
 
-[![Ninety-second explainer](media/poster.png)](media/elves-explainer.mp4)
+[![Two-minute explainer](media/poster.png)](media/elves-explainer.mp4)
 
-*Ninety-second explainer: [narrated](media/elves-explainer.mp4) · [silent, captions on screen](media/elves-explainer-silent.mp4) · [script](media/script.md)*
+*Two-minute explainer: [narrated](media/elves-explainer.mp4) · [silent, captions on screen](media/elves-explainer-silent.mp4) · [script](media/script.md)*
 
 ## Why share it now
 

@@ -1,51 +1,55 @@
 1
-00:00:00,350 --> 00:00:02,208
-Muse, Grok Bot, and now dots.
+00:00:00,350 --> 00:00:18,183
+Most of us still use AI the old way. Something comes up, you kick off an agent, and then you babysit it. Every task starts with you. There's a new model: a harness that runs on its own, watches for what's being asked of you, and drafts the work before you ever ask.
 
 2
-00:00:03,208 --> 00:00:09,895
-They all promise the same thing: an assistant that works while you're away, brings you finished work, and learns from your feedback.
+00:00:19,183 --> 00:00:21,041
+Muse, Grok Bot, and now dots.
 
 3
-00:00:10,895 --> 00:00:18,186
-I've been running a small version of that on my laptop since before any of them launched. It's not a competitor. It's just a loop I find useful.
+00:00:22,041 --> 00:00:28,728
+They all promise the same thing: an assistant that works while you're away, brings you finished work, and learns from your feedback.
 
 4
-00:00:19,186 --> 00:00:20,347
-I call it elves.
+00:00:29,728 --> 00:00:37,019
+I've been running a small version of that on my laptop since before any of them launched. It's not a competitor. It's just a loop I find useful.
 
 5
-00:00:21,347 --> 00:00:28,220
-You know the story. The shoemaker goes to bed. In the morning, the shoes are finished. All he does is look them over.
+00:00:38,019 --> 00:00:39,180
+I call it elves.
 
 6
-00:00:29,220 --> 00:00:46,031
-Imagine coming back from lunch, or a meeting, or a couple of hours of deep work, and every important ask that came in while you were away has already been drafted and is waiting for your review. No more triaging messages. No more kicking off agents and babysitting them.
+00:00:40,180 --> 00:00:47,053
+You know the story. The shoemaker goes to bed. In the morning, the shoes are finished. All he does is look them over.
 
 7
-00:00:47,031 --> 00:00:52,186
-That's the whole idea. Every hour, it checks the inboxes and calendars I've told it about.
+00:00:48,053 --> 00:01:04,864
+Imagine coming back from lunch, or a meeting, or a couple of hours of deep work, and every important ask that came in while you were away has already been drafted and is waiting for your review. No more triaging messages. No more kicking off agents and babysitting them.
 
 8
-00:00:53,186 --> 00:00:57,273
-Anything that needs real work gets drafted right away. Nothing is sent.
+00:01:05,864 --> 00:01:11,019
+That's the whole idea. Every hour, it checks the inboxes and calendars I've told it about.
 
 9
-00:00:58,273 --> 00:01:05,332
-After lunch, I open the review. Every item starts with what it did. I approve, edit, or toss it. That's my entire job.
+00:01:12,019 --> 00:01:16,106
+Anything that needs real work gets drafted right away. Nothing is sent.
 
 10
-00:01:06,332 --> 00:01:22,214
-My reactions become rules. "Too long, Sam just wants the number" becomes a note on Sam's page, and the next draft is shorter. Over time, that adds up to a second brain: everything it learns about my work, written down in plain files I can read.
+00:01:17,106 --> 00:01:24,165
+After lunch, I open the review. Every item starts with what it did. I approve, edit, or toss it. That's my entire job.
 
 11
-00:01:23,214 --> 00:01:33,245
-What I like about it: it runs on my laptop, not in someone's cloud. It only reads what I've named. It never sends anything without me. And everything it learns is written down where I can read it.
+00:01:25,165 --> 00:01:41,047
+My reactions become rules. "Too long, Sam just wants the number" becomes a note on Sam's page, and the next draft is shorter. Over time, that adds up to a second brain: everything it learns about my work, written down in plain files I can read.
 
 12
-00:01:34,245 --> 00:01:43,858
-The whole product is one idea file. Hand it to whatever coding agent you already have, even the one you're allowed to use at work. It builds it, and you can customize it however you like.
+00:01:42,047 --> 00:01:52,078
+What I like about it: it runs on my laptop, not in someone's cloud. It only reads what I've named. It never sends anything without me. And everything it learns is written down where I can read it.
 
 13
-00:01:44,858 --> 00:01:46,623
+00:01:53,078 --> 00:02:02,691
+The whole product is one idea file. Hand it to whatever coding agent you already have, even the one you're allowed to use at work. It builds it, and you can customize it however you like.
+
+14
+00:02:03,691 --> 00:02:05,456
 It's on GitHub. Link in the post.
