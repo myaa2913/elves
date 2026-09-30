@@ -6,6 +6,8 @@ https://github.com/user-attachments/assets/c30cd69e-da04-4e5c-be8c-6200f52a0d2c
 
 *Two-minute explainer. Downloads: [narrated](media/elves-explainer.mp4) · [silent, captions on screen](media/elves-explainer-silent.mp4) · [script](media/script.md)*
 
+> **The whole product is one file: [`elves-idea-file.md`](elves-idea-file.md).** About 200 lines. Hand it to your coding agent and say *"Read this and build it. Start with `/setup`."* Then customize it however you like.
+
 ## Why share it now
 
 [Muse](https://about.fb.com/news/2026/09/introducing-muse-personal-ai-agent/), [Grok Bot](https://x.ai/bot), and [dots](https://openai.com/index/introducing-dots/) all shipped this month selling the same loop: an always-on agent that watches your work, drafts while you're away, brings you finished work, and learns from your feedback. All three run on a cloud computer with broad access to your accounts, on a paid plan.
