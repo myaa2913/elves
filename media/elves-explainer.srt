@@ -1,75 +1,47 @@
 1
-00:00:00,350 --> 00:00:02,526
+00:00:00,350 --> 00:00:02,208
 Muse, Grok Bot, and now dots.
 
 2
-00:00:03,526 --> 00:00:11,035
-They all sell the same shape of thing: an agent that works while you're away, brings you finished work, and learns from your feedback.
+00:00:03,208 --> 00:00:09,895
+They all promise the same thing: an assistant that works while you're away, brings you finished work, and learns from your feedback.
 
 3
-00:00:12,035 --> 00:00:21,080
-I've been running a small version of that loop on my laptop since before any of them launched. It's not a competitor. It's just a loop I find useful.
+00:00:10,895 --> 00:00:18,186
+I've been running a small version of that on my laptop since before any of them launched. It's not a competitor. It's just a loop I find useful.
 
 4
-00:00:22,080 --> 00:00:23,339
+00:00:19,186 --> 00:00:20,347
 I call it elves.
 
 5
-00:00:24,339 --> 00:00:31,443
+00:00:21,347 --> 00:00:28,220
 You know the story. The shoemaker goes to bed. In the morning, the shoes are finished. All he does is look them over.
 
 6
-00:00:32,443 --> 00:00:34,747
-That's the whole design. Here's the loop.
+00:00:29,220 --> 00:00:34,375
+That's the whole idea. Every hour, it checks the inboxes and calendars I've told it about.
 
 7
-00:00:35,747 --> 00:00:42,936
-Every hour, a scheduled job scans the inboxes and calendars you named in one config file. Nothing else.
+00:00:35,375 --> 00:00:39,462
+Anything that needs real work gets drafted right away. Nothing is sent.
 
 8
-00:00:43,936 --> 00:00:49,333
-Anything that needs real work gets drafted right away, without asking. Nothing is sent.
+00:00:40,462 --> 00:00:47,521
+After lunch, I open the review. Every item starts with what it did. I approve, edit, or toss it. That's my entire job.
 
 9
-00:00:50,333 --> 00:00:55,880
-After lunch, you open review. Every item starts with the same line: action taken.
+00:00:48,521 --> 00:00:56,091
+My reactions become rules. "Too long, Hamin just wants the number" becomes a note on Hamin's page, and the next draft is shorter.
 
 10
-00:00:56,880 --> 00:01:01,147
-You approve, edit, redraft, or discard. That's your entire job.
+00:00:57,091 --> 00:01:07,122
+What I like about it: it runs on my laptop, not in someone's cloud. It only reads what I've named. It never sends anything without me. And everything it learns is written down where I can read it.
 
 11
-00:01:02,147 --> 00:01:10,979
-Your reactions become rules. "Too long, Hamin just wants the number" becomes one line on Hamin's page, and the next draft is shorter.
+00:01:08,122 --> 00:01:17,364
+It works with whatever coding agent you already have, even the one you're allowed to use at work. The whole design is one short document. Hand it over, and it builds it.
 
 12
-00:01:11,979 --> 00:01:14,070
-Five reasons I run it this way.
-
-13
-00:01:15,070 --> 00:01:20,382
-Scheduled jobs, not a cloud computer. It's always on while the laptop is awake.
-
-14
-00:01:21,382 --> 00:01:30,150
-A database you own. Every task and every piece of feedback is a row in a sqlite file you can query, back up, or delete.
-
-15
-00:01:31,150 --> 00:01:36,697
-Full control. It reads only what's in one config file, and nothing sends without you.
-
-16
-00:01:37,697 --> 00:01:51,798
-A second brain you can read. Everything it learns lands in a markdown wiki, a page per person, project, and output type, and every rule cites the feedback it came from. Open it in Obsidian and you can see all of it.
-
-17
-00:01:52,798 --> 00:02:02,675
-And any coding agent, including the one you already have at work. You may not be able to use Muse, Grok Bot, or dots on a work machine, and you don't need to.
-
-18
-00:02:03,675 --> 00:02:14,555
-The whole design is one markdown file, about 200 lines. Hand it to Claude Code, Codex, Cursor, or whatever your company already allows, and it builds it.
-
-19
-00:02:15,555 --> 00:02:17,902
+00:01:18,364 --> 00:01:20,129
 It's on GitHub. Link in the post.
