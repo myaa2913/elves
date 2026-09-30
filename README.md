@@ -2,9 +2,9 @@
 
 **A small harness for knowledge work. It runs the always-on loop with whatever coding agent you already have: drafts work before you ask, on your laptop, with scheduled jobs, a database you own, and a second-brain wiki you can read. Your only job is review.**
 
-[![Two-minute explainer](media/poster.png)](media/elves-explainer.mp4)
+https://github.com/user-attachments/assets/c30cd69e-da04-4e5c-be8c-6200f52a0d2c
 
-*Two-minute explainer: [narrated](media/elves-explainer.mp4) · [silent, captions on screen](media/elves-explainer-silent.mp4) · [script](media/script.md)*
+*Two-minute explainer. Downloads: [narrated](media/elves-explainer.mp4) · [silent, captions on screen](media/elves-explainer-silent.mp4) · [script](media/script.md)*
 
 ## Why share it now
 
