@@ -1,63 +1,75 @@
 1
-00:00:00,350 --> 00:00:02,874
-Meta has Muse. OpenAI has Dots.
+00:00:00,350 --> 00:00:02,526
+Muse, Grok Bot, and now dots.
 
 2
-00:00:04,124 --> 00:00:08,806
-Always-on agents that work toward your goals while you're away, and learn from your feedback.
+00:00:03,526 --> 00:00:11,035
+They all sell the same shape of thing: an agent that works while you're away, brings you finished work, and learns from your feedback.
 
 3
-00:00:10,056 --> 00:00:15,729
-Here's the same idea for knowledge work, built on a laptop with a coding agent. I call it elves.
+00:00:12,035 --> 00:00:21,080
+I've been running a small version of that loop on my laptop since before any of them launched. It's not a competitor. It's just a loop I find useful.
 
 4
-00:00:16,979 --> 00:00:23,473
-You know the story. The shoemaker goes to bed. In the morning, the shoes are finished. All he does is look them over.
+00:00:22,080 --> 00:00:23,339
+I call it elves.
 
 5
-00:00:24,723 --> 00:00:32,013
-That's the whole design. Slack and email don't respect your calendar, and an agent you have to instruct just adds one more inbox.
+00:00:24,339 --> 00:00:31,443
+You know the story. The shoemaker goes to bed. In the morning, the shoes are finished. All he does is look them over.
 
 6
-00:00:33,263 --> 00:00:35,472
-So this one starts without being told.
+00:00:32,443 --> 00:00:34,747
+That's the whole design. Here's the loop.
 
 7
-00:00:36,722 --> 00:00:41,792
-Every hour, a scan reads the sources you named in one config file, and nothing else.
+00:00:35,747 --> 00:00:42,936
+Every hour, a scheduled job scans the inboxes and calendars you named in one config file. Nothing else.
 
 8
-00:00:43,042 --> 00:00:48,426
-Anything that needs real work gets drafted immediately. No permission prompt. Nothing is sent.
+00:00:43,936 --> 00:00:49,333
+Anything that needs real work gets drafted right away, without asking. Nothing is sent.
 
 9
-00:00:49,676 --> 00:00:55,048
+00:00:50,333 --> 00:00:55,880
 After lunch, you open review. Every item starts with the same line: action taken.
 
 10
-00:00:56,298 --> 00:01:00,865
-You approve, edit, redraft, or discard. That is your entire job.
+00:00:56,880 --> 00:01:01,147
+You approve, edit, redraft, or discard. That's your entire job.
 
 11
-00:01:02,115 --> 00:01:09,886
+00:01:02,147 --> 00:01:10,979
 Your reactions become rules. "Too long, Hamin just wants the number" becomes one line on Hamin's page, and the next draft is shorter.
 
 12
-00:01:11,136 --> 00:01:16,779
-The memory is a folder of markdown. You can read it, edit it, and see where every rule came from.
+00:01:11,979 --> 00:01:14,070
+Five reasons I run it this way.
 
 13
-00:01:18,029 --> 00:01:21,270
-Three things separate it from the agents you'll read about this week.
+00:01:15,070 --> 00:01:20,382
+Scheduled jobs, not a cloud computer. It's always on while the laptop is awake.
 
 14
-00:01:22,520 --> 00:01:30,551
-It runs on your laptop. It reads only what you named. And nothing ships without your approval, enforced by the harness, not just the prompt.
+00:01:21,382 --> 00:01:30,150
+A database you own. Every task and every piece of feedback is a row in a sqlite file you can query, back up, or delete.
 
 15
-00:01:31,801 --> 00:01:36,329
-The whole design is one markdown file. Hand it to your coding agent and iterate.
+00:01:31,150 --> 00:01:36,697
+Full control. It reads only what's in one config file, and nothing sends without you.
 
 16
-00:01:37,579 --> 00:01:39,759
+00:01:37,697 --> 00:01:51,798
+A second brain you can read. Everything it learns lands in a markdown wiki, a page per person, project, and output type, and every rule cites the feedback it came from. Open it in Obsidian and you can see all of it.
+
+17
+00:01:52,798 --> 00:02:02,675
+And any coding agent, including the one you already have at work. You may not be able to use Muse, Grok Bot, or dots on a work machine, and you don't need to.
+
+18
+00:02:03,675 --> 00:02:14,555
+The whole design is one markdown file, about 200 lines. Hand it to Claude Code, Codex, Cursor, or whatever your company already allows, and it builds it.
+
+19
+00:02:15,555 --> 00:02:17,902
 It's on GitHub. Link in the post.
