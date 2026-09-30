@@ -1,0 +1,63 @@
+1
+00:00:00,350 --> 00:00:02,874
+Meta has Muse. OpenAI has Dots.
+
+2
+00:00:04,124 --> 00:00:08,806
+Always-on agents that work toward your goals while you're away, and learn from your feedback.
+
+3
+00:00:10,056 --> 00:00:15,729
+Here's the same idea for knowledge work, built on a laptop with a coding agent. I call it elves.
+
+4
+00:00:16,979 --> 00:00:23,473
+You know the story. The shoemaker goes to bed. In the morning, the shoes are finished. All he does is look them over.
+
+5
+00:00:24,723 --> 00:00:32,013
+That's the whole design. Slack and email don't respect your calendar, and an agent you have to instruct just adds one more inbox.
+
+6
+00:00:33,263 --> 00:00:35,472
+So this one starts without being told.
+
+7
+00:00:36,722 --> 00:00:41,792
+Every hour, a scan reads the sources you named in one config file, and nothing else.
+
+8
+00:00:43,042 --> 00:00:48,426
+Anything that needs real work gets drafted immediately. No permission prompt. Nothing is sent.
+
+9
+00:00:49,676 --> 00:00:55,048
+After lunch, you open review. Every item starts with the same line: action taken.
+
+10
+00:00:56,298 --> 00:01:00,865
+You approve, edit, redraft, or discard. That is your entire job.
+
+11
+00:01:02,115 --> 00:01:09,886
+Your reactions become rules. "Too long, Hamin just wants the number" becomes one line on Hamin's page, and the next draft is shorter.
+
+12
+00:01:11,136 --> 00:01:16,779
+The memory is a folder of markdown. You can read it, edit it, and see where every rule came from.
+
+13
+00:01:18,029 --> 00:01:21,270
+Three things separate it from the agents you'll read about this week.
+
+14
+00:01:22,520 --> 00:01:30,551
+It runs on your laptop. It reads only what you named. And nothing ships without your approval, enforced by the harness, not just the prompt.
+
+15
+00:01:31,801 --> 00:01:36,329
+The whole design is one markdown file. Hand it to your coding agent and iterate.
+
+16
+00:01:37,579 --> 00:01:39,759
+It's on GitHub. Link in the post.
