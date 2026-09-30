@@ -1,6 +1,6 @@
 # elves
 
-**A small loop for knowledge work: an agent that drafts before you ask, running on your laptop with scheduled jobs, a database you own, and a second-brain wiki you can read. Your only job is review.**
+**A small harness for knowledge work. It runs the always-on loop with whatever coding agent you already have: drafts work before you ask, on your laptop, with scheduled jobs, a database you own, and a second-brain wiki you can read. Your only job is review.**
 
 [![Two-minute explainer](media/poster.png)](media/elves-explainer.mp4)
 
@@ -17,7 +17,7 @@
 - **A database you own.** Every task, its status, and every piece of feedback you give is a row you can query, back up, or delete.
 - **Controllable.** It reads only the sources named in one `config.yaml`. Nothing is sent, shared, or changed outside the folder; every write tool a connector exposes is denied in the harness, not just discouraged in the prompt.
 - **Any coding agent, including the one you already have at work.** You may not be able to use Muse, Grok Bot, or dots on a work machine, and you do not need to.
-- **A second brain you can read.** Everything the agent learns lands in a markdown wiki: a page per person, project, and output type, plus your style rules, an index, and a log. Every rule cites the feedback it came from. Open the folder in Obsidian and you can see all of it, and change any of it.
+- **A second brain you can read.** Everything it learns lands in a markdown wiki: a page per person, project, and output type, plus your style rules, an index, and a log. Every rule cites the feedback it came from. Open the folder in Obsidian and you can see all of it, and change any of it.
 
 ## The tale
 
@@ -25,7 +25,7 @@ The shoemaker goes to bed. In the morning, the shoes are finished. All he does i
 
 Imagine coming back from lunch, a meeting, or a stretch of deep work to find every important ask that came in while you were out already drafted and waiting for your review. No triaging messages, no kicking off agents and babysitting them.
 
-That is the whole design. The agent fields requests, decides what deserves a draft, produces the draft without being told to start, and learns from your review so the next one is better. The executive's only job is `/review`.
+That is the whole design. elves is not an agent; it is the harness around one. It watches for requests, decides what deserves a draft, has your coding agent produce it without being told to start, and turns your review into rules so the next draft is better. The executive's only job is `/review`.
 
 ## How it works
 
@@ -42,13 +42,13 @@ flowchart LR
 - **`/review`** is the after-lunch view. Every item opens with the same line: *Action taken: read X, drafted Y at `tasks/<id>/…`, nothing sent.* You approve, edit, redraft, or discard. Each reaction is logged as a feedback row.
 - **`/ingest`** turns feedback into rules. *"Too long, Sam just wants the number"* becomes one line on `wiki/people/sam.md`: *Prefers the headline number first; skip methodology unless asked.* Every rule cites the raw transcript it came from, and a newer rule rewrites an older one instead of piling up beside it.
 - **`/lint`** runs weekly and flags stale pages, contradictions, and playbooks whose drafts keep getting low ratings.
-- **`/todo`** is your own list: approved items you said you'd handle, drafts waiting for review, and what the agent is working on right now.
+- **`/todo`** is your own list: approved items you said you'd handle, drafts waiting for review, and what is being drafted right now.
 
 State lives in three places you can open directly: `tasks.db` (sqlite: tasks, feedback, runs, and the scan's dedupe memory), `tasks/<id>/` (the drafts), and `wiki/` (the rules). There is nothing else.
 
 ## The wiki is a second brain
 
-The products above all say the agent "learns your preferences." Here you can read what it learned. The wiki is plain markdown with `[[wiki-links]]`, so it opens as an Obsidian vault, and it is organized the way a second brain is: by the people you work with, the projects you are on, and the kinds of things you produce.
+The products above all say their agent "learns your preferences." Here you can read what was learned. The wiki is plain markdown with `[[wiki-links]]`, so it opens as an Obsidian vault, and it is organized the way a second brain is: by the people you work with, the projects you are on, and the kinds of things you produce.
 
 ```
 wiki/
