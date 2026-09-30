@@ -66,11 +66,11 @@ Three rules keep it honest. Feedback is distilled into a rule, never pasted in a
 
 ## Run it
 
-The whole product is one idea file, about 200 lines, that you implement and customize with your own coding agent: [`automate-agent-task-execution.md`](automate-agent-task-execution.md). It covers scope, the setup interview, the database schema, each command, and the things that bit on the first day of running it unattended.
+The whole product is one idea file, about 200 lines, that you implement and customize with your own coding agent: [`elves-idea-file.md`](elves-idea-file.md). It covers scope, the setup interview, the database schema, each command, and the things that bit on the first day of running it unattended.
 
 1. Clone this repo, or just copy the file into an empty folder.
 2. Open the folder in a coding agent that can reach your tools (Claude Code, Codex, Cursor, or whatever you use with MCP connectors).
-3. Tell it: *"Read `automate-agent-task-execution.md` and build it. Start with `/setup`."*
+3. Tell it: *"Read `elves-idea-file.md` and build it. Start with `/setup`."*
 4. Answer the setup interview: which inboxes and calendars to watch, which folders it may read while drafting, who your regulars are.
 5. Schedule `/scan` hourly (launchd, cron, or a systemd timer) with an explicit tool allowlist and a denylist for every write tool.
 6. After lunch, run `/review`.
@@ -89,7 +89,7 @@ The seed is the product. The code your agent writes from it is yours to keep ite
 
 | Path | What it is |
 |---|---|
-| [`automate-agent-task-execution.md`](automate-agent-task-execution.md) | The seed. The entire design, meant to be handed to a coding agent. |
+| [`elves-idea-file.md`](elves-idea-file.md) | The seed. The entire design, meant to be handed to a coding agent. |
 | [`media/`](media/) | The explainer video (narrated and silent), its captions, script, and poster frame. |
 
 The running instance lives in a separate private folder, because `tasks/`, `tasks.db`, and `wiki/raw/` hold real messages, names, and verbatim feedback. Keep yours private too.
