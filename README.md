@@ -65,7 +65,7 @@ Three rules keep it honest. Feedback is distilled into a rule, never pasted in a
 
 ## Run it
 
-The design is one markdown file, about 200 lines: [`automate-agent-task-execution.md`](automate-agent-task-execution.md). It covers scope, the setup interview, the database schema, each command, and the things that bit on the first day of running it unattended.
+The whole product is one idea file, about 200 lines, that you implement and customize with your own coding agent: [`automate-agent-task-execution.md`](automate-agent-task-execution.md). It covers scope, the setup interview, the database schema, each command, and the things that bit on the first day of running it unattended.
 
 1. Clone this repo, or just copy the file into an empty folder.
 2. Open the folder in a coding agent that can reach your tools (Claude Code, Codex, Cursor, or whatever you use with MCP connectors).

@@ -35,17 +35,17 @@ Anything that needs real work gets drafted right away. Nothing is sent.
 After lunch, I open the review. Every item starts with what it did. I approve, edit, or toss it. That's my entire job.
 
 10
-00:01:01,085 --> 00:01:07,726
-My reactions become rules. "Too long, Sam just wants the number" becomes a note on Sam's page, and the next draft is shorter.
+00:01:01,085 --> 00:01:16,967
+My reactions become rules. "Too long, Sam just wants the number" becomes a note on Sam's page, and the next draft is shorter. Over time, that adds up to a second brain: everything it learns about my work, written down in plain files I can read.
 
 11
-00:01:08,726 --> 00:01:18,757
+00:01:17,967 --> 00:01:27,998
 What I like about it: it runs on my laptop, not in someone's cloud. It only reads what I've named. It never sends anything without me. And everything it learns is written down where I can read it.
 
 12
-00:01:19,757 --> 00:01:28,999
-It works with whatever coding agent you already have, even the one you're allowed to use at work. The whole design is one short document. Hand it over, and it builds it.
+00:01:28,998 --> 00:01:38,611
+The whole product is one idea file. Hand it to whatever coding agent you already have, even the one you're allowed to use at work. It builds it, and you can customize it however you like.
 
 13
-00:01:29,999 --> 00:01:31,764
+00:01:39,611 --> 00:01:41,376
 It's on GitHub. Link in the post.

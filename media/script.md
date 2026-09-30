@@ -1,6 +1,6 @@
 # elves explainer — narration script
 
-Runtime ≈ 95s. Voice: ElevenLabs. One line per scene.
+Runtime ≈ 104s. Voice: ElevenLabs. One line per scene.
 
 01. `00:00`  Muse, Grok Bot, and now dots.
 02. `00:03`  They all promise the same thing: an assistant that works while you're away, brings you finished work, and learns from your feedback.
@@ -11,7 +11,7 @@ Runtime ≈ 95s. Voice: ElevenLabs. One line per scene.
 07. `00:41`  That's the whole idea. Every hour, it checks the inboxes and calendars I've told it about.
 08. `00:47`  Anything that needs real work gets drafted right away. Nothing is sent.
 09. `00:53`  After lunch, I open the review. Every item starts with what it did. I approve, edit, or toss it. That's my entire job.
-10. `01:01`  My reactions become rules. "Too long, Sam just wants the number" becomes a note on Sam's page, and the next draft is shorter.
-11. `01:08`  What I like about it: it runs on my laptop, not in someone's cloud. It only reads what I've named. It never sends anything without me. And everything it learns is written down where I can read it.
-12. `01:19`  It works with whatever coding agent you already have, even the one you're allowed to use at work. The whole design is one short document. Hand it over, and it builds it.
-13. `01:29`  It's on GitHub. Link in the post.
+10. `01:01`  My reactions become rules. "Too long, Sam just wants the number" becomes a note on Sam's page, and the next draft is shorter. Over time, that adds up to a second brain: everything it learns about my work, written down in plain files I can read.
+11. `01:17`  What I like about it: it runs on my laptop, not in someone's cloud. It only reads what I've named. It never sends anything without me. And everything it learns is written down where I can read it.
+12. `01:28`  The whole product is one idea file. Hand it to whatever coding agent you already have, even the one you're allowed to use at work. It builds it, and you can customize it however you like.
+13. `01:39`  It's on GitHub. Link in the post.
