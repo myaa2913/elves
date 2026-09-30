@@ -10,7 +10,7 @@
 
 [Muse](https://about.fb.com/news/2026/09/introducing-muse-personal-ai-agent/), [Grok Bot](https://x.ai/bot), and [dots](https://openai.com/index/introducing-dots/) all shipped this month selling the same loop: an always-on agent that watches your work, drafts while you're away, brings you finished work, and learns from your feedback. All three run on a cloud computer with broad access to your accounts, on a paid plan.
 
-**elves** is that loop, free, local, and controllable, at a scale one person can run and read. I have been running it on my own laptop since before they launched. It covers the part of the day that actually eats knowledge workers, the inbox and the calendar, and leaves out the parts I don't want running unattended: it doesn't drive a browser, sign into websites, or make calls.
+**elves** is that loop, free, local, and controllable, at a scale one person can run and read. I have been running it on my own laptop since before they launched. It watches whatever places requests reach you that your coding agent can connect to (email, chat, calendar, tickets, documents), chosen in a short setup interview, and leaves out the parts I don't want running unattended: it doesn't drive a browser, sign into websites, or make calls.
 
 - **Free.** One MIT-licensed idea file, about 200 lines. No subscription, no cloud computer. Hand it to Claude Code, Codex, Cursor, or whatever coding agent your company already allows, and it builds it. Then customize it however you like.
 - **Local.** A sqlite file and a folder of markdown on your laptop. launchd or cron runs `/scan` hourly, `/ingest` nightly, and `/lint` weekly. It is always on while the laptop is awake, which turns out to be enough.
@@ -37,7 +37,7 @@ flowchart LR
   I -. every draft reads the wiki first .-> D
 ```
 
-- **`/scan`** runs hourly from a scheduled job. It pulls new messages and upcoming events from the inbound sources in `config.yaml`, decides what needs action, and triages each thread: `draft`, `quick_reply`, `delegate`, `clarify`, or `ignore`. Ignored threads never become tasks. A meeting with other attendees is a request for prep; your own solo reminders become to-dos.
+- **`/scan`** runs hourly from a scheduled job. It pulls new items from the inbound sources in `config.yaml` (mail threads, chat messages, calendar events, tickets, whatever you chose), decides what needs action, and triages each thread: `draft`, `quick_reply`, `delegate`, `clarify`, or `ignore`. Ignored threads never become tasks. A meeting with other attendees is a request for prep; your own solo reminders become to-dos.
 - **`/draft`** runs the moment a scan finds work. Each task gets a subagent that reads the wiki (style, the requester's page, the project's page, the playbook for that output type, and prior feedback) before writing anything, and writes its output to `tasks/<id>/`. No permission prompt. Nothing is sent.
 - **`/review`** is the after-lunch view. Every item opens with the same line: *Action taken: read X, drafted Y at `tasks/<id>/…`, nothing sent.* You approve, edit, redraft, or discard. Each reaction is logged as a feedback row.
 - **`/ingest`** turns feedback into rules. *"Too long, Sam just wants the number"* becomes one line on `wiki/people/sam.md`: *Prefers the headline number first; skip methodology unless asked.* Every rule cites the raw transcript it came from, and a newer rule rewrites an older one instead of piling up beside it.
